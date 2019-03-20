@@ -1,0 +1,198 @@
+$menu-bg:#303954;
+$active-bg:#2A75ED;
+$mian-bg:#F5F7FA;
+$warning:#E51C23;
+$primary:#2A75ED;
+$default:#101010;
+$tb-bg:#F6F8FA;
+$danger:#f56c6c;
+
+
+.page-container{
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    padding: 25px;
+    margin: 30px;
+    box-sizing: border-box;
+    display:flex;
+    flex-direction: column;
+    // overflow: scroll-y;
+    background: white;
+}
+
+//暂无内容
+.empty {
+    flex-grow: 1;
+    background: white;
+    position: relative;
+    min-height: 100px;
+    span{
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%,)
+    }
+}
+
+
+.tip{
+    padding-top:30px;
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+
+//字体颜色
+.gray-text{
+    color:#D9D9D9;
+    font-size: 14px;
+}
+
+
+.white{
+    color: white;
+}
+a,a:focus{
+    color:$default;
+    text-decoration: none;
+    padding:15px
+}
+
+//字体加粗
+.blod{
+    font-weight: bold
+}
+
+//价格
+.price-text{
+    color:#E51C23;
+}
+
+// 表单必填项
+.require{
+    color:#E51C23;
+}
+
+
+.avatar{
+    vertical-align: middle;
+}
+
+// table点击按钮
+.click-btn {
+    color:#3F51B5;
+    font-size: 14px;
+    border-right: 1px solid #3F51B5;
+    padding:0px 20px;
+    cursor: pointer;
+}
+
+.click-btn.none{
+    border:none;
+}
+
+.font-0{
+    font-size: 0;
+}
+
+
+
+//标签
+.tag{
+    font-size: 10px;
+    padding:3px;
+    background:$active-bg;
+    color:white;
+    display: inline;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+
+
+// @mixin
+@mixin list {
+    .describe{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .time {
+        font-size: 14px;
+        padding-top: 20px;
+    }
+    .author{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .avatar{
+            width: 77px;
+            height: 77px;
+            border-radius: 50%;
+            overflow: hidden;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .name{
+            font-size: 18px;
+            padding-top: 30px;
+        }
+
+        
+    }
+}
+
+
+/* elementui 样式重置 */
+.el-table th{
+    height: 60px;
+    background:$tb-bg;
+    color:$default;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.el-tabs__item{
+    font-size: 18px;
+    font-weight: bold;
+    height: auto;
+    line-height:40px;
+    padding: 0px 20px 10px;
+}
+
+.el-menu-item.no-icont-item{
+    padding-left: 75px!important;
+}
+
+.pagination{
+    text-align: right;
+    padding: 60px 0;
+    background: white;
+}
+
+.el-button--primary{
+    background: $active-bg;
+    
+}
+
+.el-button{
+    border-radius: 0;
+}
+
+.el-button--primary:focus{
+    background: $active-bg;
+}
+
+.el-button--primary:hover{
+    background:#409eff;
+}
+
+.el-input__inner,.el-textarea__inner{
+    border-radius: 0;
+}
+
+.el-cascader{
+    width: 250px;
+}
+
